@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AccontService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/init-script.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Batchprocessing/BatchConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Batchprocessing/JobCompletionNotificationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Batchprocessing/StudentItemProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Controllers/BatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Miniproject1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Models/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Models/TransformedStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Models/enums/RoleName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Requests/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Requests/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Requests/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Requests/SignUpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Response/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Response/JwtAuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Payload/Response/UserSummaryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Repositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Security/CurrentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Security/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Security/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/java/edu/miu/cs/cs590/miniproject1/Services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/main/resources/sample-data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/src/test/java/edu/miu/cs/cs590/miniproject1/Miniproject1ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Batchprocessing/BatchConfiguration$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Batchprocessing/BatchConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Batchprocessing/JobCompletionNotificationListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Batchprocessing/StudentItemProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Config/CorsConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Config/CorsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Controllers/AuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Controllers/BatchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Exception/AppException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Exception/BadRequestException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Exception/ResourceNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Miniproject1Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Models/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Models/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Models/TransformedStudent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Models/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Models/enums/RoleName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Requests/CreateUserRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Requests/LoginRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Requests/SearchResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Requests/SignUpRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Response/ApiResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Response/JwtAuthenticationResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Payload/Response/UserSummaryResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Repositories/RoleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Repositories/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Security/CurrentUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Security/CustomUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Security/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Security/JwtAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Security/JwtTokenProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Security/UserPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/edu/miu/cs/cs590/miniproject1/Services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/classes/sample-data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/surefire-reports/2021-10-02T22-05-20_480-jvmRun1.dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/surefire-reports/2021-10-02T22-05-20_480-jvmRun1.dumpstream" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/surefire-reports/TEST-edu.miu.cs.cs590.miniproject1.Miniproject1ApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/surefire-reports/edu.miu.cs.cs590.miniproject1.Miniproject1ApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AccontService/target/test-classes/edu/miu/cs/cs590/miniproject1/Miniproject1ApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zHWXXlwFy8u6REjY0dvDFNP2fB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AccontService" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AccontService" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="" />
+      <created>1633805534644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633805534644</updated>
+      <workItem from="1633805536578" duration="124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

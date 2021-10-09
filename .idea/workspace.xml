@@ -20,21 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="product service">
-      <change afterPath="$PROJECT_DIR$/OrderService/helpers/DBConnection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/helpers/DBWraper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/helpers/Helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/helpers/authMidleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AccontService/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AccontService/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/.env" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/.env" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633810971480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="product service">
+      <created>1633814631362</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633814631362</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,9 +135,10 @@
       <screen x="0" y="25" width="1792" height="1020" />
     </state>
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1020@0.25.1792.1020" timestamp="1633806823314" />
-    <state x="496" y="259" key="Vcs.Push.Dialog.v2" timestamp="1633810973276">
-      <screen x="0" y="25" width="1792" height="1020" />
+    <state x="496" y="259" key="Vcs.Push.Dialog.v2" timestamp="1633814632951">
+      <screen x="0" y="25" width="1792" height="1021" />
     </state>
     <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1020@0.25.1792.1020" timestamp="1633810973276" />
+    <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1633814632951" />
   </component>
 </project>

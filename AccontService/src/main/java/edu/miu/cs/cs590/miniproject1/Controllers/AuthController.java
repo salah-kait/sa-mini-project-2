@@ -51,6 +51,11 @@ public class AuthController {
     JwtTokenProvider tokenProvider;
 
 
+    @PostMapping("/verify-token")
+    public ResponseEntity<?> verifyToken(Authentication authentication) {
+        return ResponseEntity.ok((UserPrincipal)authentication.getPrincipal());
+    }
+
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 

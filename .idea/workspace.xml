@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +43,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AccontService" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/AccontService" />
     </key>
   </component>
@@ -102,7 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="init order service" />
+    <option name="LAST_COMMIT_MESSAGE" value="init order service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1633806823314">

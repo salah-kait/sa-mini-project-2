@@ -13,7 +13,8 @@ app.get('/',[isAuthenticated],async  (req, res) => {
     let data = await queryBuilder.where("id", 1).first();
     console.log("========")
     console.log(data.id)
-    console.log("========")
+    console.log("===========")
+    console.log(req.user.id)
     res.send('Ok From Order Service')
 },[]);
 

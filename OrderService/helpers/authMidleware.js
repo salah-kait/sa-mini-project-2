@@ -30,9 +30,7 @@ async function isAuthenticated(req, res, next) {
 
     try {
         const decodedToken = await verifyIdToken(token);
-        console.log("=========fffff======")
-        console.log(decodedToken)
-        req.user = decodedToken;
+        req.user = decodedToken.user;
 
         return next();
     } catch (err) {

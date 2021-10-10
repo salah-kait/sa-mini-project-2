@@ -18,14 +18,14 @@ app.get('/',async  (req, res) => {
 },[]);
 
 //place order
-app.post('/place-order',[isAuthenticated],async (req, res) => {
+app.post('/place-order',[isAuthenticated], async (req, res) => {
     //create order
     knex('order')
         .insert({
             "user_id":req.user.id
         })
         .then(
-            function (id){
+             async (id)=>{
                 console.log("inserted ID is:"+id);
 
                 let products = req.body.products
@@ -38,11 +38,13 @@ app.post('/place-order',[isAuthenticated],async (req, res) => {
                     //call products
                 }) ;
 
+                //call payment
+                await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.PAYMENT_SERVICE_URL+"/pay/"+id)
+
                 res.send('order placed, your order id is #'+id);
             }
-        )
-    //update products api
-    //call payment
+        );
+
 },[]);
 
 //get order

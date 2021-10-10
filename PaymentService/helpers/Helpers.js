@@ -22,30 +22,26 @@ const getResponse = (statusCode, responseData, extra_data = {}) => {
 };
 exports.getResponse = getResponse;
 
-const makeAuthRequest = (token,bodyParameters,url)=>{
+const makeAuthRequest = (token,method,bodyParameters,url)=>{
   return new Promise((resolve, reject) => {
 
     const config = {
+        url:url,
+        method:method,
       headers: { Authorization: `Bearer ${token}` }
     };
 
-    axios.post(
-        url,
-        bodyParameters,
+    axios.request(
         config
     ).then(
         function (response) {
-          console.log("------")
-          console.log("------")
-          console.log(response.data)
-          console.log("------")
-          return resolve(response.data);
+          resolve(response.data);
         }
     ).catch(
         function (error) {
-          return reject(error.response);
+            reject(error.response);
         }
     );
   });
 }
-module.exports = makeAuthRequest;
+exports.makeAuthRequest = makeAuthRequest;

@@ -19,11 +19,41 @@ app.get('/',async  (req, res) => {
 
 //place order
 app.get('/pay/:order_id',[isAuthenticated],async (req, res) => {
-    console.log("Payment Service Called for Order ID #"+req.params.order_id)
+    let order_id = req.params.order_id;
+
+    console.log("Payment Service Called for Order ID #"+order_id)
     //get Order details
-    //get User Details
-    //make transaction
-    res.send("Payment Service Called for Order ID #"+req.params.order_id)
+    try{
+        let orderDetails =  await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.ORDER_SERVICE_URL+"/get-order/"+order_id)
+        console.log("Order Details",orderDetails );
+
+        let total = orderDetails.data.total;
+
+
+
+        //get User Details
+        //todo request
+        let payemnt_type = "CC";
+        switch (payemnt_type){
+            case "CC": await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.CREDITCARD_SERVICE_URL+"/pay/"+total)
+                break;
+            case "PAYPAL":
+                await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.ORDER_SERVICE_URL+"/pay/"+total)
+                break
+        }
+        //make transaction
+        return res.send({
+            message:"Payment Service Called for Order ID #"+req.params.order_id,
+            total:total,
+            type:payemnt_type
+        });
+    }catch (e) {
+        return res.status(400).send({
+           error:"Bad Request"
+        });
+    }
+
+
 },[]);
 
 

@@ -14,40 +14,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //health check
 app.get('/',async  (req, res) => {
-    res.send('Ok From Payment Service')
+    res.send('Ok From Credit Cartd Service')
 },[]);
 
 //place order
-app.post('/place-order',[isAuthenticated],async (req, res) => {
-    //create order
-    knex('order')
-        .insert({
-            "user_id":req.user.id
-        })
-        .then(
-            function (id){
-                console.log("inserted ID is:"+id);
-
-                let products = req.body.products
-                for(let product of products){
-                    product[ "order_id"]=id;
-                }
-                knex('order_products').insert(products).then(()=>{
-
-                    //call shipping
-                    //call products
-                }) ;
-
-                res.send('order placed, your order id is #'+id);
-            }
-        )
-    //update products api
-    //call payment
+app.get('/pay/:total',[isAuthenticated],async (req, res) => {
+    console.log('Paid Succesfuly form Credit Card with Amount:'+req.params.total+"$");
+    return res.send('Paid Succesfuly form Credit Card with Amount:'+req.params.total+"$");
 },[]);
 
 
 
 const port = process.env.PORT
 app.listen(port, () => {
-    console.log(`Order Service listening at http://localhost:${port}`)
+    console.log(`Credit Card Service listening at http://localhost:${port}`)
 })

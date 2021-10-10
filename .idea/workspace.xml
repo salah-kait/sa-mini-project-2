@@ -19,36 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="place order">
-      <change afterPath="$PROJECT_DIR$/CreditCardService/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/helpers/DBConnection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/helpers/DBWraper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/helpers/Helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/helpers/authMidleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CreditCardService/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/helpers/DBConnection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/helpers/DBWraper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/helpers/Helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/helpers/authMidleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/helpers/DBConnection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/helpers/DBWraper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/helpers/Helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/helpers/authMidleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaypalService/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/.env" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/helpers/authMidleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/helpers/authMidleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/.env" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentService/helpers/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentService/helpers/Helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentService/helpers/authMidleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentService/helpers/authMidleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentService/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633805534644</updated>
       <workItem from="1633805536578" duration="2066000" />
-      <workItem from="1633887428756" duration="1171000" />
+      <workItem from="1633887428756" duration="2483000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1633805690658</created>
@@ -151,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633823229374</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="services">
+      <created>1633888656682</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633888656682</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,17 +158,19 @@
     <MESSAGE value="product service" />
     <MESSAGE value="validation" />
     <MESSAGE value="place order" />
-    <option name="LAST_COMMIT_MESSAGE" value="place order" />
+    <MESSAGE value="services" />
+    <option name="LAST_COMMIT_MESSAGE" value="services" />
   </component>
   <component name="WindowStateProjectService">
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1633806823314">
       <screen x="0" y="25" width="1792" height="1020" />
     </state>
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1020@0.25.1792.1020" timestamp="1633806823314" />
-    <state x="496" y="259" key="Vcs.Push.Dialog.v2" timestamp="1633823230932">
-      <screen x="0" y="25" width="1792" height="1021" />
+    <state x="531" y="250" key="Vcs.Push.Dialog.v2" timestamp="1633888658083">
+      <screen x="0" y="25" width="1920" height="980" />
     </state>
     <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1020@0.25.1792.1020" timestamp="1633810973276" />
     <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1633823230932" />
+    <state x="531" y="250" key="Vcs.Push.Dialog.v2/0.25.1920.980/-1080.25.1080.1895@0.25.1920.980" timestamp="1633888658083" />
   </component>
 </project>

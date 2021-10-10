@@ -18,12 +18,12 @@ app.get('/',async  (req, res) => {
 },[]);
 
 //place order
-app.post('/pay/{order_id}',[isAuthenticated],async (req, res) => {
+app.get('/pay/:order_id',[isAuthenticated],async (req, res) => {
     console.log("Payment Service Called for Order ID #"+req.params.order_id)
     //get Order details
     //get User Details
     //make transaction
-
+    res.send("Payment Service Called for Order ID #"+req.params.order_id)
 },[]);
 
 

@@ -45,15 +45,18 @@ async function isAuthenticated(req, res, next) {
 
 module.exports = isAuthenticated;
 
-const makeAuthRequest = (token,bodyParameters,url)=>{
+const verifyIdToken = (token)=>{
     return new Promise((resolve, reject) => {
+        const authUrl = process.env.ACCOUNT_SERVICE_URL;
 
         const config = {
             headers: { Authorization: `Bearer ${token}` }
         };
+        const bodyParameters = {
+        };
 
         axios.post(
-            url,
+            authUrl+'/api/auth/verify-token',
             bodyParameters,
             config
         ).then(
@@ -70,5 +73,5 @@ const makeAuthRequest = (token,bodyParameters,url)=>{
             }
         );
     });
+
 }
-module.exports = isAuthenticated;

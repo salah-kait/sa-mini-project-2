@@ -33,8 +33,24 @@ app.post('/place-order',[isAuthenticated], async (req, res) => {
                     product[ "order_id"]=id;
                 }
                 knex('order_products').insert(products).then(()=>{
-
+                    knex('order_products').where("order_id",id).then( (result)=>{
+                        console.log(result)
+                        for (product of result){
+                              Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.SHIPPING_SERVICE_URL+"/ship/"+product.product_id).catch((e)=>{
+                                  console.log("========++++===+++=====");
+                                  console.log("========++++===+++=====");
+                                  console.log("========++++===+++=====");
+                                  console.log("========++++===+++=====");
+                                  console.log(req.jwt_token);
+                                  console.log("========++++===+++=====");
+                                  console.log("========++++===+++=====");
+                                  console.log("========++++===+++=====");
+                                  console.log("========++++===+++=====");
+                              })
+                        }
+                    })
                     //call shipping
+
                     //call products
                 }) ;
 

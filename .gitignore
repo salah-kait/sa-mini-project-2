@@ -1,3 +1,6 @@
 /OrderService/node_modules/
 /ProductService/node_modules/
 /StockService/node_modules/
+/PaymentService/node_modules/
+/CreditCardService/node_modules/
+/PaypalService/node_modules/

@@ -1,11 +1,12 @@
 const express = require("express");
 const env = require("env2")(".env");
+const isAuthenticated = require("./helpers/authMidleware");
 
 const app = express();
 const port = process.env.PORT;
 
 
-app.get('/stock-up', (req, res) => {
+app.get('/stock-up', [isAuthenticated], (req, res) => {
   console.log("stock up requested");
   res.sendStatus(200);
 });

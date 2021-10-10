@@ -3,6 +3,7 @@ const env = require("env2")(".env");
 const knex = require("./helpers/DBConnection").knex;
 const bodyParser = require("body-parser");
 const axios = require("axios");
+const isAuthenticated = require("./helpers/authMidleware");
 
 const app = express();
 const port = process.env.PORT;
@@ -12,7 +13,7 @@ const productMinQuantity = process.env.PRODUCT_LIMIT;
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/products/new', (req, res) => {
+app.post('/products/new',[isAuthenticated], (req, res) => {
   knex('products').insert(req.body).then((data) => {
     console.log(data);
   });
@@ -20,13 +21,13 @@ app.post('/products/new', (req, res) => {
   res.sendStatus(200);
 });
 
-app.get('/products', (req, res) => {
+app.get('/products', [isAuthenticated], (req, res) => {
   knex("products").select().then((data) => {
     res.send(data);
   });
 });
 
-app.post('/product-ordered', (req, res) => {
+app.post('/product-ordered', [isAuthenticated], (req, res) => {
   let storedQuantity;
   knex('products').select('quantity').where({ id: req.body.id }).first().then((data) => {
     storedQuantity = data.quantity;

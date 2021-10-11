@@ -22,15 +22,11 @@ public class Payment {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    @NaturalId
     private PaymentMethod paymentType;
 
-    @NotBlank
-    @Size(max = 4, min = 2)
     private String CCV;
 
-    @NotBlank
-    @Size(max = 16, min = 12)
+
     private String paymentMethodIdentifierNumber;
 
     private Boolean preferred;

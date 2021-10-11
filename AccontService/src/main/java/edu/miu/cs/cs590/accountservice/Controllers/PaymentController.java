@@ -1,6 +1,7 @@
 package edu.miu.cs.cs590.accountservice.Controllers;
 
 import edu.miu.cs.cs590.accountservice.Models.Payment;
+import edu.miu.cs.cs590.accountservice.Repositories.PaymentRepository;
 import edu.miu.cs.cs590.accountservice.Security.CurrentUser;
 import edu.miu.cs.cs590.accountservice.Security.UserPrincipal;
 import edu.miu.cs.cs590.accountservice.Services.PaymentService;
@@ -23,11 +24,18 @@ public class PaymentController {
     PaymentService paymentService;
 
     @Autowired
+    PaymentRepository paymentRepository;
+
+    @Autowired
     UserService userService;
 
     @PostMapping
     public ResponseEntity<?> payment(@Valid @RequestBody Payment payment, @CurrentUser UserPrincipal userPrincipal) throws NotFoundException {
         payment.setUser(userService.getUserById(userPrincipal.getId()));
-        return ResponseEntity.ok(paymentService.save(payment));
+        payment = paymentService.save(payment);
+        if(payment.getPreferred()){
+            paymentRepository.updatePreferredPayments(userPrincipal.getId(),payment.getId());
+        }
+        return ResponseEntity.ok(payment);
     }
 }

@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stock-config
+data:
+  PORT: "5555"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: stock-secret
+data:
+  SALAH_SEC: U0FMQUhfU0VDUkVT
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-service-deployment
+spec:
+  selector:
+    matchLabels:
+      app: stock-service-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: stock-service-app
+    spec:
+      containers:
+        - name: stock-service-app
+          image: greenex/stock-service:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5555
+          envFrom:
+            - configMapRef:
+                name: stock-config
+            - secretRef:
+                name: stock-secret
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stock-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: stock-service-app
+  ports:
+    - protocol: TCP
+      port: 5555
+      targetPort: 5555

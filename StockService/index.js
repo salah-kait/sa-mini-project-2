@@ -1,5 +1,5 @@
 const express = require("express");
-const env = require("env2")(".env");
+//const env = require("env2")(".env");
 const isAuthenticated = require("./helpers/authMidleware");
 
 const app = express();

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: product-service-node
+          image: greenex/product-service-test-node
           imagePullPolicy: Always
           ports:
             - containerPort: 4444

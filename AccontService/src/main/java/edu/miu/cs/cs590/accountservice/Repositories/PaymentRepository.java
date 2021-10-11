@@ -18,4 +18,8 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
     @Modifying
     @Query("UPDATE Payment pm SET pm.preferred=false WHERE pm.user.id = :userId AND pm.id <> :pmId")
     void updatePreferredPayments(@Param("userId") Long UserId, @Param("pmId") Long pmId);
+
+
+    @Query("SELECT pm FROM  Payment pm  WHERE pm.user.id = :userId AND pm.preferred = true")
+    Optional<Payment> getUserPreferredPayment(@Param("userId") Long UserId);
 }

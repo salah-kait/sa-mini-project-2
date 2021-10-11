@@ -32,12 +32,13 @@ app.get('/pay/:order_id',[isAuthenticated],async (req, res) => {
 
 
         //get User Details
-        //todo request
-        let payemnt_type = "CC";
+        let paymentInfo =  await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.ACCOUNT_SERVICE_URL+"/payment/preferred")
+
+        let payemnt_type = paymentInfo.paymentType;
         switch (payemnt_type){
-            case "CC": await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.CREDITCARD_SERVICE_URL+"/pay/"+total)
+            case "CreditCard": await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.CREDITCARD_SERVICE_URL+"/pay/"+total)
                 break;
-            case "PAYPAL":
+            case "PayPal":
                 await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.ORDER_SERVICE_URL+"/pay/"+total)
                 break
         }

@@ -37,15 +37,7 @@ app.post('/place-order',[isAuthenticated], async (req, res) => {
                         console.log(result)
                         for (product of result){
                               Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.SHIPPING_SERVICE_URL+"/ship/"+product.product_id).catch((e)=>{
-                                  console.log("========++++===+++=====");
-                                  console.log("========++++===+++=====");
-                                  console.log("========++++===+++=====");
-                                  console.log("========++++===+++=====");
-                                  console.log(req.jwt_token);
-                                  console.log("========++++===+++=====");
-                                  console.log("========++++===+++=====");
-                                  console.log("========++++===+++=====");
-                                  console.log("========++++===+++=====");
+
                               })
                         }
                     })

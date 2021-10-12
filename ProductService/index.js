@@ -1,5 +1,5 @@
 const express = require("express");
-const env = require("env2")(".env");
+//const env = require("env2")(".env");
 const knex = require("./helpers/DBConnection").knex;
 const bodyParser = require("body-parser");
 const axios = require("axios");

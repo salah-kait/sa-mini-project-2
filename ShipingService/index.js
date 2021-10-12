@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const env = require("env2")(".env");
+//const env = require("env2")(".env");
 const isAuthenticated = require("./helpers/authMidleware");
 
 const app = express();

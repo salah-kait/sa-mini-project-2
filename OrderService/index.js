@@ -26,7 +26,7 @@ app.post('/place-order',[isAuthenticated], async (req, res) => {
         })
         .then(
              async (id)=>{
-                console.log("inserted ID is:"+id);
+                console.log("ordered product ID is:"+id);
 
                 let products = req.body.products
                 for(let product of products){
@@ -36,14 +36,14 @@ app.post('/place-order',[isAuthenticated], async (req, res) => {
                     knex('order_products').where("order_id",id).then( (result)=>{
                         console.log(result)
                         for (product of result){
-                              Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.SHIPPING_SERVICE_URL+"/ship/"+product.product_id).catch((e)=>{
+                              Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.SHIPPING_SERVICE_URL+"/ship/"+product.product_id).catch((e)=>{});
+                              Helpers.makeAuthRequest(req.jwt_token,"POST",{
+                                  "id":product.product_id,
+                                  "qnt":product.qnt,
+                              },process.env.PRODUCT_SERVICE_URL+"/product-ordered").catch((e)=>{});
 
-                              })
                         }
                     })
-                    //call shipping
-
-                    //call products
                 }) ;
 
                 //call payment

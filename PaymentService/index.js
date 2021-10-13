@@ -35,13 +35,9 @@ app.get('/pay/:order_id',[isAuthenticated],async (req, res) => {
         let paymentInfo =  await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.ACCOUNT_SERVICE_URL+"/payment/preferred")
 
         let payemnt_type = paymentInfo.paymentType;
-        switch (payemnt_type){
-            case "CreditCard": await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.CREDITCARD_SERVICE_URL+"/pay/"+total)
-                break;
-            case "PayPal":
-                await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.ORDER_SERVICE_URL+"/pay/"+total)
-                break
-        }
+        //we choose the service by env variable
+        let Service_URL = process.env[env];
+        await Helpers.makeAuthRequest(req.jwt_token,"GET",{},Service_URL+"/pay/"+total)
         //make transaction
         return res.send({
             message:"Payment Service Called for Order ID #"+req.params.order_id,

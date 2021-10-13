@@ -4,8 +4,10 @@ metadata:
   name: payment-config
 data:
   PORT: "7890"
-
   ACCOUNT_SERVICE_URL: http://account-service:8081
+  CreditCard: http://credit-card-service:9999
+  PayPal: http://paypal-service:8888
+
 ---
 apiVersion: v1
 kind: Secret

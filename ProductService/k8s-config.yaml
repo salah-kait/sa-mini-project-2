@@ -4,13 +4,14 @@ metadata:
   name: product-config
 data:
   PORT: "4444"
-  DB_HOST: product-mysql-db
+  DB_HOST: mysql-db
   DB_PORT: "3306"
   DB_USER: root
   DB_PASS: root
   DB_NAME: product
   PRODUCT_LIMIT: "30"
-  STOCK_SERVICE_URL: socket-service
+  STOCK_SERVICE_URL: http://socket-service
+  ACCOUNT_SERVICE_URL: http://account-service
 ---
 apiVersion: v1
 kind: Secret
@@ -35,7 +36,7 @@ spec:
     spec:
       containers:
         - name: product-service-app
-          image: greenex/product-service:1.1
+          image: greenex/product-service:1
           imagePullPolicy: Always
           ports:
             - containerPort: 4444

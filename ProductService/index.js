@@ -45,10 +45,11 @@ app.post('/product-ordered', [isAuthenticated], (req, res) => {
       });
   });
 
-  res.send('Ok From Order Service')
+  res.send('Ok From Product Service')
 });
 
 app.get('/', (req, res) => {
+  console.log('Ok From Product Service');
   res.status(200).send('Ok From Product Service')
 });
 

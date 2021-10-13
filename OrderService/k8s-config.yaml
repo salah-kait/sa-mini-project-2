@@ -1,61 +1,61 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: product-config
+  name: order-config
 data:
-  PORT: "4444"
+  PORT: "3333"
   DB_HOST: mysql-db
   DB_PORT: "3306"
   DB_USER: root
   DB_PASS: root
-  DB_NAME: product
-  PRODUCT_LIMIT: "30"
-  STOCK_SERVICE_URL: http://socket-service
-  ACCOUNT_SERVICE_URL: http://account-service:8081
+  DB_NAME: order
+  ACCOUNT_SERVICE_URL: http://account-service
+  PAYMENT_SERVICE_URL: http://payment-service
+  SHIPPING_SERVICE_URL: http://shipping-service
 ---
 apiVersion: v1
 kind: Secret
 metadata:
-  name: product-secret
+  name: order-secret
 data:
   SALAH_SEC: U0FMQUhfU0VDUkVT
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: product-service-deployment
+  name: order-service-deployment
 spec:
   selector:
     matchLabels:
-      app: product-service-app
+      app: order-service-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: product-service-app
+        app: order-service-app
     spec:
       containers:
-        - name: product-service-app
-          image: greenex/product-service:1
+        - name: order-service-app
+          image: greenex/order-service:1
           imagePullPolicy: Always
           ports:
-            - containerPort: 4444
+            - containerPort: 3333
           envFrom:
             - configMapRef:
-                name: product-config
+                name: order-config
             - secretRef:
-                name: product-secret
+                name: order-secret
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: product-service
+  name: order-service
 spec:
   type: LoadBalancer
   selector:
-    app: product-service-app
+    app: order-service-app
   ports:
     - protocol: TCP
-      port: 4444
-      targetPort: 4444
+      port: 3333
+      targetPort: 3333

@@ -87,7 +87,7 @@ data:
         CREATE DATABASE IF NOT EXISTS `order`;
         CREATE DATABASE IF NOT EXISTS `account`;
         use product;
-        CREATE TABLE IF NOT EXISTS `product` (
+        CREATE TABLE IF NOT EXISTS `products` (
           `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
           `name` nvarchar(30) NOT NULL,
           `price` double NOT NULL,

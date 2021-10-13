@@ -19,10 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="services">
+    <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="k8s">
+      <change afterPath="$PROJECT_DIR$/OrderService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/k8s-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaymentService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaymentService/k8s-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/helpers/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/helpers/Helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AccontService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AccontService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OrderService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/k8s-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/k8s-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShipingService/k8s-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ShipingService/k8s-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-db.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +54,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PaymentService" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/OrderService/helpers" />
+      <recent name="$PROJECT_DIR$/PaymentService" />
+      <recent name="$PROJECT_DIR$/OrderService" />
       <recent name="$PROJECT_DIR$/AccontService" />
+      <recent name="$PROJECT_DIR$/ShipingService" />
+      <recent name="$PROJECT_DIR$/CreditCardService" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/PaypalService" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,7 +80,9 @@
       <option name="presentableId" value="Default" />
       <updated>1633805534644</updated>
       <workItem from="1633805536578" duration="2066000" />
-      <workItem from="1633887428756" duration="6204000" />
+      <workItem from="1633887428756" duration="18777000" />
+      <workItem from="1633998091374" duration="16070000" />
+      <workItem from="1634093414331" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1633805690658</created>
@@ -146,7 +161,77 @@
       <option name="project" value="LOCAL" />
       <updated>1633897341788</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finishing">
+      <created>1633897755276</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633897755276</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sql">
+      <created>1633897883089</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633897883089</updated>
+    </task>
+    <task id="LOCAL-00014" summary="shipping">
+      <created>1633898864283</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633898864283</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finishing">
+      <created>1633913716976</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633913716977</updated>
+    </task>
+    <task id="LOCAL-00016" summary="stcok service config">
+      <created>1633930004162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1633930004163</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Products K8s">
+      <created>1634000015880</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1634000015880</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Paypal K8s">
+      <created>1634000524014</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634000524014</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Credit Card K8s">
+      <created>1634000950176</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634000950176</updated>
+    </task>
+    <task id="LOCAL-00020" summary="k8s">
+      <created>1634005262658</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634005262659</updated>
+    </task>
+    <task id="LOCAL-00021" summary="k8s">
+      <created>1634091695884</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634091695884</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,26 +256,42 @@
     <MESSAGE value="validation" />
     <MESSAGE value="place order" />
     <MESSAGE value="services" />
-    <option name="LAST_COMMIT_MESSAGE" value="services" />
+    <MESSAGE value="sql" />
+    <MESSAGE value="shipping" />
+    <MESSAGE value="finishing" />
+    <MESSAGE value="stcok service config" />
+    <MESSAGE value="Products K8s" />
+    <MESSAGE value="Paypal K8s" />
+    <MESSAGE value="Credit Card K8s" />
+    <MESSAGE value="k8s" />
+    <option name="LAST_COMMIT_MESSAGE" value="k8s" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="360" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1634004749951">
+      <screen x="0" y="25" width="1792" height="1024" />
+    </state>
+    <state x="360" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1024@0.25.1792.1024" timestamp="1634004749951" />
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1633806823314">
       <screen x="0" y="25" width="1792" height="1020" />
     </state>
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1020@0.25.1792.1020" timestamp="1633806823314" />
-    <state x="531" y="250" key="Vcs.Push.Dialog.v2" timestamp="1633897343152">
-      <screen x="0" y="25" width="1920" height="980" />
+    <state x="496" y="259" key="Vcs.Push.Dialog.v2" timestamp="1634091697540">
+      <screen x="0" y="25" width="1792" height="1021" />
     </state>
     <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1020@0.25.1792.1020" timestamp="1633810973276" />
-    <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1633823230932" />
-    <state x="531" y="250" key="Vcs.Push.Dialog.v2/0.25.1920.980/-1080.25.1080.1895@0.25.1920.980" timestamp="1633897343152" />
-    <state x="702" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633897147713">
-      <screen x="0" y="25" width="1920" height="980" />
+    <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1634091697540" />
+    <state x="496" y="260" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1634005263981" />
+    <state x="531" y="250" key="Vcs.Push.Dialog.v2/0.25.1920.980/-1080.25.1080.1895@0.25.1920.980" timestamp="1633913718957" />
+    <state x="655" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633928050837">
+      <screen x="0" y="25" width="1792" height="1021" />
     </state>
+    <state x="655" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1021@0.25.1792.1021" timestamp="1633928050837" />
     <state x="702" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.980/-1080.25.1080.1895@0.25.1920.980" timestamp="1633897147713" />
-    <state x="595" y="270" width="602" height="490" key="find.popup" timestamp="1633894063106">
-      <screen x="0" y="25" width="1920" height="980" />
+    <state x="555" y="280" width="567" height="511" key="find.popup" timestamp="1634092273040">
+      <screen x="0" y="25" width="1792" height="1021" />
     </state>
+    <state x="555" y="280" width="567" height="511" key="find.popup/0.25.1792.1021@0.25.1792.1021" timestamp="1634092273040" />
+    <state x="555" y="281" width="567" height="512" key="find.popup/0.25.1792.1024@0.25.1792.1024" timestamp="1634004861800" />
     <state x="595" y="270" width="602" height="490" key="find.popup/0.25.1920.980/-1080.25.1080.1895@0.25.1920.980" timestamp="1633894063106" />
   </component>
 </project>

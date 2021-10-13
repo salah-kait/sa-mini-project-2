@@ -4,7 +4,7 @@ metadata:
   name: shipping-config
 data:
   PORT: "1223"
-  ACCOUNT_SERVICE_URL: http://account-service:8081
+  ACCOUNT_SERVICE_URL: http://account-service
 ---
 apiVersion: apps/v1
 kind: Deployment

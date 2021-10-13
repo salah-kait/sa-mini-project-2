@@ -5,7 +5,7 @@ metadata:
 data:
   PORT: "7890"
 
-  ACCOUNT_SERVICE_URL: http://account-service
+  ACCOUNT_SERVICE_URL: http://account-service:8081
 ---
 apiVersion: v1
 kind: Secret

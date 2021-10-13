@@ -9,9 +9,10 @@ data:
   DB_USER: root
   DB_PASS: root
   DB_NAME: order
-  ACCOUNT_SERVICE_URL: http://account-service
-  PAYMENT_SERVICE_URL: http://payment-service
-  SHIPPING_SERVICE_URL: http://shipping-service
+  ACCOUNT_SERVICE_URL: http://account-service:8081
+  PRODUCT_SERVICE_URL: http://product-service:4444
+  PAYMENT_SERVICE_URL: http://payment-service:7890
+  SHIPPING_SERVICE_URL: http://shipping-service:1223
 ---
 apiVersion: v1
 kind: Secret

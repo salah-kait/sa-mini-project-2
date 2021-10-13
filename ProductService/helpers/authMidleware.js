@@ -1,5 +1,6 @@
 const axios = require('axios');
 
+
 async function isAuthenticated(req, res, next) {
     const {authorization } = req.headers;
 
@@ -47,7 +48,6 @@ module.exports = isAuthenticated;
 const verifyIdToken = (token)=>{
     return new Promise((resolve, reject) => {
         const authUrl = process.env.ACCOUNT_SERVICE_URL;
-        console.log("api url: "+authUrl);
 
         const config = {
             headers: { Authorization: `Bearer ${token}` }
@@ -69,7 +69,6 @@ const verifyIdToken = (token)=>{
             }
         ).catch(
             function (error) {
-                console.log(error)
                 return reject(error.response);
             }
         );

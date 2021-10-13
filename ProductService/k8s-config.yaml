@@ -10,7 +10,7 @@ data:
   DB_PASS: root
   DB_NAME: product
   PRODUCT_LIMIT: "30"
-  STOCK_SERVICE_URL: http://socket-service:5555
+  STOCK_SERVICE_URL: http://stock-service:5555
   ACCOUNT_SERVICE_URL: http://account-service:8081
 ---
 apiVersion: v1

@@ -1,6 +1,7 @@
 const express = require("express");
 //const env = require("env2")(".env");
 const knex = require("./helpers/DBConnection").knex;
+const helpers = require("./helpers/Helpers");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const isAuthenticated = require("./helpers/authMidleware");
@@ -38,9 +39,13 @@ app.post('/product-ordered', [isAuthenticated], (req, res) => {
       }).then(() => {
         console.log(storedQuantity)
         if (storedQuantity < productMinQuantity) {
-          axios.get(stockURL + '/stock-up').then((res) => {
-            console.log(res.data)
-          });
+          helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.STOCK_SERVICE_URL+"/stock-up").catch((e)=>{
+            console.log(e);
+          })
+
+          // axios.get(stockURL + '/stock-up').then((res) => {
+          //   console.log(res.data)
+          // });
         }
       });
   });

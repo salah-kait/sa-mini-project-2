@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT;
 
 
-app.get('/stock-up', [isAuthenticated], (req, res) => {
+app.get('/stock-up', (req, res) => {
   console.log("stock up requested");
   res.sendStatus(200);
 });

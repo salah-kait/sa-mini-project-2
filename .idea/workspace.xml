@@ -21,10 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3445c74f-4ed7-48be-8029-56ec5e9bf601" name="Default Changelist" comment="k8s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/k8s-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/k8s-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentService/k8s-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentService/k8s-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/helpers/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/helpers/Helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/helpers/authMidleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/helpers/authMidleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductService/k8s-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/k8s-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShipingService/k8s-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ShipingService/k8s-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockService/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/StockService/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +50,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PaymentService" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProductService/helpers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProductService/helpers" />
       <recent name="$PROJECT_DIR$/PaymentService" />
       <recent name="$PROJECT_DIR$/OrderService" />
       <recent name="$PROJECT_DIR$/AccontService" />
       <recent name="$PROJECT_DIR$/ShipingService" />
-      <recent name="$PROJECT_DIR$/CreditCardService" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -77,7 +78,7 @@
       <workItem from="1633805536578" duration="2066000" />
       <workItem from="1633887428756" duration="18777000" />
       <workItem from="1633998091374" duration="16070000" />
-      <workItem from="1634093414331" duration="1635000" />
+      <workItem from="1634093414331" duration="3273000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1633805690658</created>
@@ -233,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634094760006</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="k8s">
+      <created>1634095171005</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634095171005</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,11 +285,11 @@
       <screen x="0" y="25" width="1792" height="1020" />
     </state>
     <state x="636" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1020@0.25.1792.1020" timestamp="1633806823314" />
-    <state x="496" y="259" key="Vcs.Push.Dialog.v2" timestamp="1634094761479">
+    <state x="496" y="259" key="Vcs.Push.Dialog.v2" timestamp="1634095172374">
       <screen x="0" y="25" width="1792" height="1021" />
     </state>
     <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1020@0.25.1792.1020" timestamp="1633810973276" />
-    <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1634094761479" />
+    <state x="496" y="259" key="Vcs.Push.Dialog.v2/0.25.1792.1021@0.25.1792.1021" timestamp="1634095172374" />
     <state x="496" y="260" key="Vcs.Push.Dialog.v2/0.25.1792.1024@0.25.1792.1024" timestamp="1634005263981" />
     <state x="531" y="250" key="Vcs.Push.Dialog.v2/0.25.1920.980/-1080.25.1080.1895@0.25.1920.980" timestamp="1633913718957" />
     <state x="655" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633928050837">

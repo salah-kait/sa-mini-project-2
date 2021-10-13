@@ -30,6 +30,8 @@ const makeAuthRequest = (token,method,bodyParameters,url)=>{
       method:method,
       headers: { Authorization: `Bearer ${token}` }
     };
+    console.log("Making Serivce Request");
+    console.log(config);
 
     axios.request(
         config
@@ -39,6 +41,7 @@ const makeAuthRequest = (token,method,bodyParameters,url)=>{
         }
     ).catch(
         function (error) {
+          console.log(error);
           reject(error.response);
         }
     );

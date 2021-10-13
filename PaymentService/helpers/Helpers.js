@@ -31,6 +31,9 @@ const makeAuthRequest = (token,method,bodyParameters,url)=>{
       headers: { Authorization: `Bearer ${token}` }
     };
 
+    console.log("Making Request to transaction")
+    console.log(config);
+
     axios.request(
         config
     ).then(
@@ -38,7 +41,9 @@ const makeAuthRequest = (token,method,bodyParameters,url)=>{
           resolve(response.data);
         }
     ).catch(
+
         function (error) {
+            console.log(error);
             reject(error.response);
         }
     );

@@ -36,7 +36,7 @@ app.get('/pay/:order_id',[isAuthenticated],async (req, res) => {
 
         let payemnt_type = paymentInfo.paymentType;
         //we choose the service by env variable
-        let Service_URL = process.env[env];
+        let Service_URL = process.env[payemnt_type];
         await Helpers.makeAuthRequest(req.jwt_token,"GET",{},Service_URL+"/pay/"+total)
         //make transaction
         return res.send({
@@ -45,6 +45,7 @@ app.get('/pay/:order_id',[isAuthenticated],async (req, res) => {
             type:payemnt_type
         });
     }catch (e) {
+        console.log(e);
         return res.status(400).send({
            error:"Bad Request"
         });

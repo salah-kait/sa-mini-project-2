@@ -5,6 +5,7 @@ metadata:
 data:
   PORT: "7890"
   ACCOUNT_SERVICE_URL: http://account-service:8081
+  ORDER_SERVICE_URL: http://order-service:3333
   CreditCard: http://credit-card-service:9999
   PayPal: http://paypal-service:8888
 

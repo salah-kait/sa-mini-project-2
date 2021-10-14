@@ -28,7 +28,8 @@ const makeAuthRequest = (token,method,bodyParameters,url)=>{
     const config = {
       url:url,
       method:method,
-      headers: { Authorization: `Bearer ${token}` }
+      headers: { Authorization: `Bearer ${token}` },
+      data:bodyParameters
     };
     console.log("Making Serivce Request");
     console.log(config);

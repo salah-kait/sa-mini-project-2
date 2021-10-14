@@ -37,19 +37,24 @@ app.post('/place-order',[isAuthenticated], async (req, res) => {
                         console.log(result)
                         for (let product of result){
                               Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.SHIPPING_SERVICE_URL+"/ship/"+product.product_id).catch((e)=>{});
-                              // Helpers.makeAuthRequest(req.jwt_token,"POST",{
-                              //     "id":product.product_id,
-                              //     "qnt":product.qnt,
-                              // },process.env.PRODUCT_SERVICE_URL+"/product-ordered").catch((e)=>{});
+                               Helpers.makeAuthRequest(req.jwt_token,"POST",{
+                                   "id":product.product_id,
+                                   "qnt":product.qnt
+                               },process.env.PRODUCT_SERVICE_URL+"/product-ordered").catch((e)=>{});
 
                         }
+                    }).catch(function(e){
+                        console.log("===========");
+                        console.log("====ERORRR=======");
+                        console.log(e);
                     })
                 }) ;
 
                 //call payment
+                 console.log("Call Payment");
                 await Helpers.makeAuthRequest(req.jwt_token,"GET",{},process.env.PAYMENT_SERVICE_URL+"/pay/"+id)
-
-                res.send('order placed, your order id is #'+id);
+                 console.log("finish Payment");
+                return res.send('order placed, your order id is #'+id);
             }
         );
 
